@@ -231,12 +231,16 @@ export async function loadStaticData() {
  */
 async function loadVehiclePositions(apiUrl, endpoint, vehicleType, defaultColor) {
     try {
-        const response = await fetch(`${apiUrl}${endpoint}`);
+        const url = `${apiUrl}${endpoint}`;
+        console.log('[DEBUG] Fetching:', url);
+        const response = await fetch(url);
         if (!response.ok) {
+            console.error('[DEBUG] Failed:', url, 'Status:', response.status);
             return [];
         }
 
         const data = await response.json();
+        console.log('[DEBUG] Got data for', endpoint, '- entities:', data?.entity?.length || 0);
         
         // Parse GTFS-Realtime feed
         if (data.feed && data.feed.entity) {
