@@ -1,4 +1,5 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const GtfsRealtimeBindings = require('gtfs-realtime-bindings');
 
 const API_KEY = process.env.TRANSPORTVIC_API_KEY;
 
@@ -27,8 +28,12 @@ exports.handler = async (event, context) => {
       throw new Error(`API responded with status: ${response.status}`);
     }
 
-    const data = await response.json();
-    return { statusCode: 200, headers, body: JSON.stringify(data) };
+    const buffer = await response.arrayBuffer();
+    const feed = GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(
+      new Uint8Array(buffer)
+    );
+
+    return { statusCode: 200, headers, body: JSON.stringify(feed) };
   } catch (error) {
     console.error('Error fetching tram positions:', error);
     return {
@@ -38,4 +43,3 @@ exports.handler = async (event, context) => {
     };
   }
 };
-
