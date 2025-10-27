@@ -1,0 +1,45 @@
+{
+  "name": "mini-melbourne-3d",
+  "version": "1.0.0",
+  "description": "A real-time 3D digital map of Melbourne's train system",
+  "type": "module",
+  "main": "dist/mini-melbourne-3d.js",
+  "module": "dist/mini-melbourne-3d.esm.js",
+  "style": "dist/mini-melbourne-3d.css",
+  "dependencies": {
+    "@turf/along": "^5.1.5",
+    "@turf/bearing": "^5.1.5",
+    "@turf/distance": "^5.1.5",
+    "@turf/helpers": "^5.1.5",
+    "@turf/length": "^5.1.5",
+    "@turf/line-offset": "^7.2.0",
+    "@turf/line-slice": "^5.1.5",
+    "@turf/nearest-point-on-line": "^5.1.5",
+    "gtfs-realtime-bindings": "^1.1.1",
+    "mapbox-gl": "^2.15.0",
+    "node-fetch": "^3.3.2",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^8.57.1",
+    "postcss": "^8.5.1",
+    "rollup": "^4.32.0",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build:local": "rollup -c && node scripts/copy-to-public.cjs",
+    "dev": "rollup -c -w",
+    "process-data": "node scripts/process-gtfs.js",
+    "process-all-transport": "node scripts/process-all-transport.js",
+    "optimize-shapes": "node scripts/optimize-shapes.cjs",
+    "analyze-offsets": "node scripts/analyze-railway-offsets.js",
+    "install-all": "pnpm install && cd api && pnpm install"
+  },
+  "author": "",
+  "license": "MIT"
+}

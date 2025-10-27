@@ -1,0 +1,194 @@
+[
+  {
+    "id": "aus:vic:vic-03-1:",
+    "shortName": "1",
+    "longName": "South Melbourne Beach - East Coburg",
+    "type": "0",
+    "color": "#B5BD00",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-109:",
+    "shortName": "109",
+    "longName": "Port Melbourne - Box Hill",
+    "type": "0",
+    "color": "#E87722",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-11:",
+    "shortName": "11",
+    "longName": "Victoria Harbour Docklands - West Preston",
+    "type": "0",
+    "color": "#6ECEB2",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-12:",
+    "shortName": "12",
+    "longName": "St Kilda (Fitzroy St) - Victoria Gardens",
+    "type": "0",
+    "color": "#007E92",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-16:",
+    "shortName": "16",
+    "longName": "Kew - Melbourne University",
+    "type": "0",
+    "color": "#FBD872",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-19:",
+    "shortName": "19",
+    "longName": "Flinders Street Station - North Coburg",
+    "type": "0",
+    "color": "#8A1B61",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-3:",
+    "shortName": "3",
+    "longName": "East Malvern - Melbourne University",
+    "type": "0",
+    "color": "#8DC8E8",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-30:",
+    "shortName": "30",
+    "longName": "Central Pier Docklands - St Vincents Plaza",
+    "type": "0",
+    "color": "#534F96",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-35:",
+    "shortName": "35",
+    "longName": "City Circle",
+    "type": "0",
+    "color": "#6B3529",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-48:",
+    "shortName": "48",
+    "longName": "Victoria Harbour Docklands - North Balwyn",
+    "type": "0",
+    "color": "#333434",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-5:",
+    "shortName": "5",
+    "longName": "Malvern - Melbourne University",
+    "type": "0",
+    "color": "#D50032",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-57:",
+    "shortName": "57",
+    "longName": "Flinders Street Station - West Maribyrnong",
+    "type": "0",
+    "color": "#00C1D5",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-58:",
+    "shortName": "58",
+    "longName": "Toorak - West Coburg",
+    "type": "0",
+    "color": "#969696",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-59:",
+    "shortName": "59",
+    "longName": "Flinders Street Station - Airport West",
+    "type": "0",
+    "color": "#00653A",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-6:",
+    "shortName": "6",
+    "longName": "Glen Iris - Moreland",
+    "type": "0",
+    "color": "#01426A",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-64:",
+    "shortName": "64",
+    "longName": "East Brighton - Melbourne University",
+    "type": "0",
+    "color": "#00AB8E",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-67:",
+    "shortName": "67",
+    "longName": "Carnegie - Melbourne University",
+    "type": "0",
+    "color": "#956C58",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-03-70:",
+    "shortName": "70",
+    "longName": "Waterfront City Docklands - Wattle Park",
+    "type": "0",
+    "color": "#F59BBB",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-72:",
+    "shortName": "72",
+    "longName": "Camberwell - Melbourne University",
+    "type": "0",
+    "color": "#9ABEAA",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-75:",
+    "shortName": "75",
+    "longName": "Central Pier Docklands - Vermont South",
+    "type": "0",
+    "color": "#00A9E0",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-78:",
+    "shortName": "78",
+    "longName": "Balaclava - North Richmond",
+    "type": "0",
+    "color": "#A0A0D6",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-82:",
+    "shortName": "82",
+    "longName": "Moonee Ponds - Footscray",
+    "type": "0",
+    "color": "#D2D755",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-86:",
+    "shortName": "86",
+    "longName": "Waterfront City Docklands - Bundoora RMIT",
+    "type": "0",
+    "color": "#FFB500",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-03-96:",
+    "shortName": "96",
+    "longName": "St Kilda Beach - East Brunswick",
+    "type": "0",
+    "color": "#C6007E",
+    "textColor": "#FFFFFF"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "aus:vic:vic-01-ABY:",
+    "shortName": "Seymour",
+    "longName": "Albury - Melbourne Via Seymour",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-ART:",
+    "shortName": "Ballarat",
+    "longName": "Ararat - Melbourne Via Ballarat",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-BAT:",
+    "shortName": "Ballarat",
+    "longName": "Ballarat - Melbourne Via Melton",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-BDE:",
+    "shortName": "Traralgon",
+    "longName": "Bairnsdale - Melbourne Via Traralgon & Sale",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-BGO:",
+    "shortName": "Bendigo",
+    "longName": "Bendigo - Melbourne Via Sunbury",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-ECH:",
+    "shortName": "Bendigo",
+    "longName": "Echuca/Moama - Melbourne Via Bendigo or Heathcote",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-GEL:",
+    "shortName": "Geelong",
+    "longName": "Geelong - Melbourne Via Geelong",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-MBY:",
+    "shortName": "Ballarat",
+    "longName": "Maryborough - Melbourne Via Ballarat",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-SER:",
+    "shortName": "Seymour",
+    "longName": "Seymour - Melbourne Via Broadmeadows",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-SNH:",
+    "shortName": "Seymour",
+    "longName": "Shepparton - Melbourne Via Seymour",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-SWL:",
+    "shortName": "Bendigo",
+    "longName": "Swan Hill - Melbourne Via Bendigo",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-TRN:",
+    "shortName": "Traralgon",
+    "longName": "Traralgon - Melbourne Via Pakenham, Moe & Morwell",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-01-WBL:",
+    "shortName": "Geelong",
+    "longName": "Warrnambool - Melbourne Via Geelong & Colac",
+    "type": "2",
+    "color": "#8F1A95",
+    "textColor": "#FFFFFF"
+  }
+]

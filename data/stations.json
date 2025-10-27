@@ -1,0 +1,1549 @@
+[
+  {
+    "id": "vic:rail:ACF",
+    "name": "Aircraft Railway Station",
+    "lat": -37.86660595,
+    "lon": 144.76080944,
+    "code": "vic:rail:ACF"
+  },
+  {
+    "id": "vic:rail:ALB",
+    "name": "Albion Railway Station",
+    "lat": -37.77765281,
+    "lon": 144.82470361,
+    "code": "vic:rail:ALB"
+  },
+  {
+    "id": "vic:rail:ALM",
+    "name": "Alamein Railway Station",
+    "lat": -37.86832039,
+    "lon": 145.07965567,
+    "code": "vic:rail:ALM"
+  },
+  {
+    "id": "vic:rail:ALP",
+    "name": "Alphington Railway Station",
+    "lat": -37.77839363,
+    "lon": 145.03125493,
+    "code": "vic:rail:ALP"
+  },
+  {
+    "id": "vic:rail:ALT",
+    "name": "Altona Railway Station",
+    "lat": -37.8671476,
+    "lon": 144.82964474,
+    "code": "vic:rail:ALT"
+  },
+  {
+    "id": "vic:rail:ARM",
+    "name": "Armadale Railway Station",
+    "lat": -37.85645238,
+    "lon": 145.01932554,
+    "code": "vic:rail:ARM"
+  },
+  {
+    "id": "vic:rail:ASH",
+    "name": "Ashburton Railway Station",
+    "lat": -37.86196753,
+    "lon": 145.08134376,
+    "code": "vic:rail:ASH"
+  },
+  {
+    "id": "vic:rail:ASP",
+    "name": "Aspendale Railway Station",
+    "lat": -38.02722019,
+    "lon": 145.10214962,
+    "code": "vic:rail:ASP"
+  },
+  {
+    "id": "vic:rail:ASV",
+    "name": "Ascot Vale Railway Station",
+    "lat": -37.77530609,
+    "lon": 144.92182074,
+    "code": "vic:rail:ASV"
+  },
+  {
+    "id": "vic:rail:ASY",
+    "name": "Anstey Railway Station",
+    "lat": -37.76124203,
+    "lon": 144.96068404,
+    "code": "vic:rail:ASY"
+  },
+  {
+    "id": "vic:rail:AUB",
+    "name": "Auburn Railway Station",
+    "lat": -37.82239831,
+    "lon": 145.04584366,
+    "code": "vic:rail:AUB"
+  },
+  {
+    "id": "vic:rail:BAT",
+    "name": "Batman Railway Station",
+    "lat": -37.73352285,
+    "lon": 144.96284055,
+    "code": "vic:rail:BAT"
+  },
+  {
+    "id": "vic:rail:BAY",
+    "name": "Bayswater Railway Station",
+    "lat": -37.84173004,
+    "lon": 145.26813639,
+    "code": "vic:rail:BAY"
+  },
+  {
+    "id": "vic:rail:BBH",
+    "name": "Brighton Beach Railway Station",
+    "lat": -37.92648432,
+    "lon": 144.98915355,
+    "code": "vic:rail:BBH"
+  },
+  {
+    "id": "vic:rail:BBN",
+    "name": "Blackburn Railway Station",
+    "lat": -37.82007075,
+    "lon": 145.15001354,
+    "code": "vic:rail:BBN"
+  },
+  {
+    "id": "vic:rail:BCV",
+    "name": "Balaclava Railway Station",
+    "lat": -37.86948773,
+    "lon": 144.9935121,
+    "code": "vic:rail:BCV"
+  },
+  {
+    "id": "vic:rail:BEG",
+    "name": "Belgrave Railway Station",
+    "lat": -37.9091021,
+    "lon": 145.35529128,
+    "code": "vic:rail:BEG"
+  },
+  {
+    "id": "vic:rail:BEL",
+    "name": "Bell Railway Station",
+    "lat": -37.74556212,
+    "lon": 145.00015503,
+    "code": "vic:rail:BEL"
+  },
+  {
+    "id": "vic:rail:BEN",
+    "name": "Bentleigh Railway Station",
+    "lat": -37.91742457,
+    "lon": 145.03699513,
+    "code": "vic:rail:BEN"
+  },
+  {
+    "id": "vic:rail:BEW",
+    "name": "Berwick Railway Station",
+    "lat": -38.03998037,
+    "lon": 145.34541666,
+    "code": "vic:rail:BEW"
+  },
+  {
+    "id": "vic:rail:BFD",
+    "name": "Beaconsfield Railway Station",
+    "lat": -38.05083135,
+    "lon": 145.36607374,
+    "code": "vic:rail:BFD"
+  },
+  {
+    "id": "vic:rail:BIT",
+    "name": "Bittern Railway Station",
+    "lat": -38.33739032,
+    "lon": 145.17802653,
+    "code": "vic:rail:BIT"
+  },
+  {
+    "id": "vic:rail:BLY",
+    "name": "Burnley Railway Station",
+    "lat": -37.82756022,
+    "lon": 145.00755515,
+    "code": "vic:rail:BLY"
+  },
+  {
+    "id": "vic:rail:BMS",
+    "name": "Broadmeadows Railway Station",
+    "lat": -37.68304926,
+    "lon": 144.91961322,
+    "code": "vic:rail:BMS"
+  },
+  {
+    "id": "vic:rail:BON",
+    "name": "Bonbeach Railway Station",
+    "lat": -38.06547485,
+    "lon": 145.1201058,
+    "code": "vic:rail:BON"
+  },
+  {
+    "id": "vic:rail:BOR",
+    "name": "Boronia Railway Station",
+    "lat": -37.86040238,
+    "lon": 145.28470457,
+    "code": "vic:rail:BOR"
+  },
+  {
+    "id": "vic:rail:BOX",
+    "name": "Box Hill Railway Station",
+    "lat": -37.81922165,
+    "lon": 145.12142893,
+    "code": "vic:rail:BOX"
+  },
+  {
+    "id": "vic:rail:BWD",
+    "name": "Burwood Railway Station",
+    "lat": -37.85156328,
+    "lon": 145.08051107,
+    "code": "vic:rail:BWD"
+  },
+  {
+    "id": "vic:rail:BWK",
+    "name": "Brunswick Railway Station",
+    "lat": -37.76772055,
+    "lon": 144.95958654,
+    "code": "vic:rail:BWK"
+  },
+  {
+    "id": "vic:rail:BXR",
+    "name": "Baxter Railway Station",
+    "lat": -38.19404306,
+    "lon": 145.16052609,
+    "code": "vic:rail:BXR"
+  },
+  {
+    "id": "vic:rail:CAM",
+    "name": "Camberwell Railway Station",
+    "lat": -37.82656714,
+    "lon": 145.05869718,
+    "code": "vic:rail:CAM"
+  },
+  {
+    "id": "vic:rail:CAR",
+    "name": "Carrum Railway Station",
+    "lat": -38.07653027,
+    "lon": 145.1228096,
+    "code": "vic:rail:CAR"
+  },
+  {
+    "id": "vic:rail:CBE",
+    "name": "Cranbourne Railway Station",
+    "lat": -38.09953731,
+    "lon": 145.28059898,
+    "code": "vic:rail:CBE"
+  },
+  {
+    "id": "vic:rail:CBY",
+    "name": "Canterbury Railway Station",
+    "lat": -37.82448518,
+    "lon": 145.08122424,
+    "code": "vic:rail:CBY"
+  },
+  {
+    "id": "vic:rail:CDA",
+    "name": "Cardinia Road Railway Station",
+    "lat": -38.07129047,
+    "lon": 145.43779101,
+    "code": "vic:rail:CDA"
+  },
+  {
+    "id": "vic:rail:CDN",
+    "name": "Croydon Railway Station",
+    "lat": -37.79530018,
+    "lon": 145.28048737,
+    "code": "vic:rail:CDN"
+  },
+  {
+    "id": "vic:rail:CFD",
+    "name": "Caulfield Railway Station",
+    "lat": -37.87745946,
+    "lon": 145.04252478,
+    "code": "vic:rail:CFD"
+  },
+  {
+    "id": "vic:rail:CGB",
+    "name": "Craigieburn Railway Station",
+    "lat": -37.6019248,
+    "lon": 144.94330601,
+    "code": "vic:rail:CGB"
+  },
+  {
+    "id": "vic:rail:CHL",
+    "name": "Clifton Hill Railway Station",
+    "lat": -37.78865745,
+    "lon": 144.9954167,
+    "code": "vic:rail:CHL"
+  },
+  {
+    "id": "vic:rail:CHM",
+    "name": "Chatham Railway Station",
+    "lat": -37.82429952,
+    "lon": 145.08864793,
+    "code": "vic:rail:CHM"
+  },
+  {
+    "id": "vic:rail:CLA",
+    "name": "Clayton Railway Station",
+    "lat": -37.92468255,
+    "lon": 145.12053436,
+    "code": "vic:rail:CLA"
+  },
+  {
+    "id": "vic:rail:CLO",
+    "name": "Coolaroo Railway Station",
+    "lat": -37.66111042,
+    "lon": 144.92604123,
+    "code": "vic:rail:CLO"
+  },
+  {
+    "id": "vic:rail:CNE",
+    "name": "Carnegie Railway Station",
+    "lat": -37.88624148,
+    "lon": 145.05857506,
+    "code": "vic:rail:CNE"
+  },
+  {
+    "id": "vic:rail:COB",
+    "name": "Coburg Railway Station",
+    "lat": -37.74234502,
+    "lon": 144.96333634,
+    "code": "vic:rail:COB"
+  },
+  {
+    "id": "vic:rail:CPT",
+    "name": "Crib Point Railway Station",
+    "lat": -38.36612338,
+    "lon": 145.20404332,
+    "code": "vic:rail:CPT"
+  },
+  {
+    "id": "vic:rail:CSA",
+    "name": "Chelsea Railway Station",
+    "lat": -38.05329032,
+    "lon": 145.1166795,
+    "code": "vic:rail:CSA"
+  },
+  {
+    "id": "vic:rail:CTM",
+    "name": "Cheltenham Railway Station",
+    "lat": -37.96664989,
+    "lon": 145.05455793,
+    "code": "vic:rail:CTM"
+  },
+  {
+    "id": "vic:rail:CWD",
+    "name": "Collingwood Railway Station",
+    "lat": -37.80452593,
+    "lon": 144.99374967,
+    "code": "vic:rail:CWD"
+  },
+  {
+    "id": "vic:rail:CXT",
+    "name": "Croxton Railway Station",
+    "lat": -37.764101,
+    "lon": 144.99705619,
+    "code": "vic:rail:CXT"
+  },
+  {
+    "id": "vic:rail:DBN",
+    "name": "Darebin Railway Station",
+    "lat": -37.77496341,
+    "lon": 145.03847598,
+    "code": "vic:rail:DBN"
+  },
+  {
+    "id": "vic:rail:DCK",
+    "name": "Diamond Creek Railway Station",
+    "lat": -37.67337905,
+    "lon": 145.15853819,
+    "code": "vic:rail:DCK"
+  },
+  {
+    "id": "vic:rail:DEN",
+    "name": "Dennis Railway Station",
+    "lat": -37.77918729,
+    "lon": 145.00824163,
+    "code": "vic:rail:DEN"
+  },
+  {
+    "id": "vic:rail:DLG",
+    "name": "Darling Railway Station",
+    "lat": -37.86895684,
+    "lon": 145.06295083,
+    "code": "vic:rail:DLG"
+  },
+  {
+    "id": "vic:rail:DNG",
+    "name": "Dandenong Railway Station",
+    "lat": -37.98996792,
+    "lon": 145.20972537,
+    "code": "vic:rail:DNG"
+  },
+  {
+    "id": "vic:rail:DRT",
+    "name": "Diggers Rest Railway Station",
+    "lat": -37.62696051,
+    "lon": 144.71982218,
+    "code": "vic:rail:DRT"
+  },
+  {
+    "id": "vic:rail:EAG",
+    "name": "Eaglemont Railway Station",
+    "lat": -37.76358553,
+    "lon": 145.05394269,
+    "code": "vic:rail:EAG"
+  },
+  {
+    "id": "vic:rail:ECM",
+    "name": "East Camberwell Railway Station",
+    "lat": -37.82589419,
+    "lon": 145.06819025,
+    "code": "vic:rail:ECM"
+  },
+  {
+    "id": "vic:rail:EDI",
+    "name": "Edithvale Railway Station",
+    "lat": -38.03653574,
+    "lon": 145.10758338,
+    "code": "vic:rail:EDI"
+  },
+  {
+    "id": "vic:rail:ELS",
+    "name": "Elsternwick Railway Station",
+    "lat": -37.88475311,
+    "lon": 145.00089787,
+    "code": "vic:rail:ELS"
+  },
+  {
+    "id": "vic:rail:ELT",
+    "name": "Eltham Railway Station",
+    "lat": -37.71354967,
+    "lon": 145.14782202,
+    "code": "vic:rail:ELT"
+  },
+  {
+    "id": "vic:rail:EMV",
+    "name": "East Malvern Railway Station",
+    "lat": -37.87692101,
+    "lon": 145.06939324,
+    "code": "vic:rail:EMV"
+  },
+  {
+    "id": "vic:rail:EPH",
+    "name": "East Pakenham Railway Station ",
+    "lat": -38.08441136,
+    "lon": 145.50635689,
+    "code": "vic:rail:EPH"
+  },
+  {
+    "id": "vic:rail:EPP",
+    "name": "Epping Railway Station",
+    "lat": -37.65217784,
+    "lon": 145.03107934,
+    "code": "vic:rail:EPP"
+  },
+  {
+    "id": "vic:rail:ERM",
+    "name": "East Richmond Railway Station",
+    "lat": -37.82639995,
+    "lon": 144.99706569,
+    "code": "vic:rail:ERM"
+  },
+  {
+    "id": "vic:rail:ESD",
+    "name": "Essendon Railway Station",
+    "lat": -37.7560117,
+    "lon": 144.9161975,
+    "code": "vic:rail:ESD"
+  },
+  {
+    "id": "vic:rail:FAK",
+    "name": "Fawkner Railway Station",
+    "lat": -37.71462129,
+    "lon": 144.96054503,
+    "code": "vic:rail:FAK"
+  },
+  {
+    "id": "vic:rail:FBD",
+    "name": "Flemington Bridge Railway Station",
+    "lat": -37.78813995,
+    "lon": 144.93932328,
+    "code": "vic:rail:FBD"
+  },
+  {
+    "id": "vic:rail:FFD",
+    "name": "Fairfield Railway Station",
+    "lat": -37.77917126,
+    "lon": 145.0169053,
+    "code": "vic:rail:FFD"
+  },
+  {
+    "id": "vic:rail:FGS",
+    "name": "Flagstaff Railway Station",
+    "lat": -37.8119815,
+    "lon": 144.95566511,
+    "code": "vic:rail:FGS"
+  },
+  {
+    "id": "vic:rail:FKN",
+    "name": "Frankston Railway Station",
+    "lat": -38.14299007,
+    "lon": 145.12616228,
+    "code": "vic:rail:FKN"
+  },
+  {
+    "id": "vic:rail:FSS",
+    "name": "Flinders Street Railway Station",
+    "lat": -37.81830513,
+    "lon": 144.96696435,
+    "code": "vic:rail:FSS"
+  },
+  {
+    "id": "vic:rail:FSY",
+    "name": "Footscray Railway Station",
+    "lat": -37.80141343,
+    "lon": 144.90202006,
+    "code": "vic:rail:FSY"
+  },
+  {
+    "id": "vic:rail:FTG",
+    "name": "Ferntree Gully Railway Station",
+    "lat": -37.88169799,
+    "lon": 145.29525126,
+    "code": "vic:rail:FTG"
+  },
+  {
+    "id": "vic:rail:GAR",
+    "name": "Gardiner Railway Station",
+    "lat": -37.85327908,
+    "lon": 145.05165466,
+    "code": "vic:rail:GAR"
+  },
+  {
+    "id": "vic:rail:GBV",
+    "name": "Glenbervie Railway Station",
+    "lat": -37.74720985,
+    "lon": 144.92093868,
+    "code": "vic:rail:GBV"
+  },
+  {
+    "id": "vic:rail:GFE",
+    "name": "Glenferrie Railway Station",
+    "lat": -37.82146682,
+    "lon": 145.03643883,
+    "code": "vic:rail:GFE"
+  },
+  {
+    "id": "vic:rail:GHY",
+    "name": "Glen Huntly Railway Station ",
+    "lat": -37.88971946,
+    "lon": 145.04222285,
+    "code": "vic:rail:GHY"
+  },
+  {
+    "id": "vic:rail:GIN",
+    "name": "Ginifer Railway Station",
+    "lat": -37.76008529,
+    "lon": 144.81135895,
+    "code": "vic:rail:GIN"
+  },
+  {
+    "id": "vic:rail:GIR",
+    "name": "Glen Iris Railway Station",
+    "lat": -37.85930842,
+    "lon": 145.0582249,
+    "code": "vic:rail:GIR"
+  },
+  {
+    "id": "vic:rail:GOW",
+    "name": "Gowrie Railway Station",
+    "lat": -37.700678,
+    "lon": 144.95887432,
+    "code": "vic:rail:GOW"
+  },
+  {
+    "id": "vic:rail:GRN",
+    "name": "Greensborough Railway Station",
+    "lat": -37.70371477,
+    "lon": 145.10793589,
+    "code": "vic:rail:GRN"
+  },
+  {
+    "id": "vic:rail:GRY",
+    "name": "Glenroy Railway Station",
+    "lat": -37.70453633,
+    "lon": 144.9172204,
+    "code": "vic:rail:GRY"
+  },
+  {
+    "id": "vic:rail:GVE",
+    "name": "Gardenvale Railway Station",
+    "lat": -37.89669508,
+    "lon": 145.00416843,
+    "code": "vic:rail:GVE"
+  },
+  {
+    "id": "vic:rail:GWY",
+    "name": "Glen Waverley Railway Station",
+    "lat": -37.87950407,
+    "lon": 145.16205755,
+    "code": "vic:rail:GWY"
+  },
+  {
+    "id": "vic:rail:HAM",
+    "name": "Hampton Railway Station",
+    "lat": -37.9379864,
+    "lon": 145.00150445,
+    "code": "vic:rail:HAM"
+  },
+  {
+    "id": "vic:rail:HAW",
+    "name": "Hawthorn Railway Station",
+    "lat": -37.82182601,
+    "lon": 145.02289866,
+    "code": "vic:rail:HAW"
+  },
+  {
+    "id": "vic:rail:HBE",
+    "name": "Hurstbridge Railway Station",
+    "lat": -37.63939817,
+    "lon": 145.19201689,
+    "code": "vic:rail:HBE"
+  },
+  {
+    "id": "vic:rail:HCG",
+    "name": "Hoppers Crossing Railway Station",
+    "lat": -37.88338025,
+    "lon": 144.70074704,
+    "code": "vic:rail:HCG"
+  },
+  {
+    "id": "vic:rail:HDB",
+    "name": "Heidelberg Railway Station",
+    "lat": -37.75707293,
+    "lon": 145.06068552,
+    "code": "vic:rail:HDB"
+  },
+  {
+    "id": "vic:rail:HEY",
+    "name": "Heyington Railway Station",
+    "lat": -37.83465462,
+    "lon": 145.02264711,
+    "code": "vic:rail:HEY"
+  },
+  {
+    "id": "vic:rail:HIG",
+    "name": "Highett Railway Station",
+    "lat": -37.948425,
+    "lon": 145.0418718,
+    "code": "vic:rail:HIG"
+  },
+  {
+    "id": "vic:rail:HKN",
+    "name": "Hawksburn Railway Station",
+    "lat": -37.84459087,
+    "lon": 145.00214206,
+    "code": "vic:rail:HKN"
+  },
+  {
+    "id": "vic:rail:HLM",
+    "name": "Hallam Railway Station",
+    "lat": -38.01774038,
+    "lon": 145.2697768,
+    "code": "vic:rail:HLM"
+  },
+  {
+    "id": "vic:rail:HMT",
+    "name": "Heathmont Railway Station",
+    "lat": -37.82832227,
+    "lon": 145.24455538,
+    "code": "vic:rail:HMT"
+  },
+  {
+    "id": "vic:rail:HOL",
+    "name": "Holmesglen Railway Station",
+    "lat": -37.87440222,
+    "lon": 145.09066203,
+    "code": "vic:rail:HOL"
+  },
+  {
+    "id": "vic:rail:HST",
+    "name": "Hastings Railway Station",
+    "lat": -38.30565853,
+    "lon": 145.18597988,
+    "code": "vic:rail:HST"
+  },
+  {
+    "id": "vic:rail:HTD",
+    "name": "Heatherdale Railway Station",
+    "lat": -37.8188232,
+    "lon": 145.21397044,
+    "code": "vic:rail:HTD"
+  },
+  {
+    "id": "vic:rail:HUG",
+    "name": "Hughesdale Railway Station",
+    "lat": -37.89419074,
+    "lon": 145.07618607,
+    "code": "vic:rail:HUG"
+  },
+  {
+    "id": "vic:rail:HUN",
+    "name": "Huntingdale Railway Station",
+    "lat": -37.91101734,
+    "lon": 145.10236432,
+    "code": "vic:rail:HUN"
+  },
+  {
+    "id": "vic:rail:HWL",
+    "name": "Hartwell Railway Station",
+    "lat": -37.84398457,
+    "lon": 145.07555959,
+    "code": "vic:rail:HWL"
+  },
+  {
+    "id": "vic:rail:HWS",
+    "name": "Hawkstowe Railway Station",
+    "lat": -37.62297489,
+    "lon": 145.09729471,
+    "code": "vic:rail:HWS"
+  },
+  {
+    "id": "vic:rail:IVA",
+    "name": "Ivanhoe Railway Station",
+    "lat": -37.76889674,
+    "lon": 145.04542519,
+    "code": "vic:rail:IVA"
+  },
+  {
+    "id": "vic:rail:JAC",
+    "name": "Jacana Railway Station",
+    "lat": -37.69513079,
+    "lon": 144.91585052,
+    "code": "vic:rail:JAC"
+  },
+  {
+    "id": "vic:rail:JLI",
+    "name": "Jolimont-MCG Railway Station",
+    "lat": -37.81652702,
+    "lon": 144.98409834,
+    "code": "vic:rail:JLI"
+  },
+  {
+    "id": "vic:rail:JOR",
+    "name": "Jordanville Railway Station",
+    "lat": -37.87360339,
+    "lon": 145.11209016,
+    "code": "vic:rail:JOR"
+  },
+  {
+    "id": "vic:rail:JWL",
+    "name": "Jewell Railway Station",
+    "lat": -37.77498702,
+    "lon": 144.95871691,
+    "code": "vic:rail:JWL"
+  },
+  {
+    "id": "vic:rail:KAN",
+    "name": "Kananook Railway Station",
+    "lat": -38.12175231,
+    "lon": 145.13537493,
+    "code": "vic:rail:KAN"
+  },
+  {
+    "id": "vic:rail:KEN",
+    "name": "Kensington Railway Station",
+    "lat": -37.79378022,
+    "lon": 144.93052444,
+    "code": "vic:rail:KEN"
+  },
+  {
+    "id": "vic:rail:KPK",
+    "name": "Keon Park Railway Station",
+    "lat": -37.69487012,
+    "lon": 145.01188382,
+    "code": "vic:rail:KPK"
+  },
+  {
+    "id": "vic:rail:KPL",
+    "name": "Keilor Plains Railway Station",
+    "lat": -37.72927934,
+    "lon": 144.79373807,
+    "code": "vic:rail:KPL"
+  },
+  {
+    "id": "vic:rail:KYG",
+    "name": "Kooyong Railway Station",
+    "lat": -37.83992894,
+    "lon": 145.03355161,
+    "code": "vic:rail:KYG"
+  },
+  {
+    "id": "vic:rail:LAB",
+    "name": "Laburnum Railway Station",
+    "lat": -37.82078023,
+    "lon": 145.14070271,
+    "code": "vic:rail:LAB"
+  },
+  {
+    "id": "vic:rail:LAL",
+    "name": "Lalor Railway Station",
+    "lat": -37.66585075,
+    "lon": 145.01719317,
+    "code": "vic:rail:LAL"
+  },
+  {
+    "id": "vic:rail:LAV",
+    "name": "Laverton Railway Station",
+    "lat": -37.86369404,
+    "lon": 144.77261667,
+    "code": "vic:rail:LAV"
+  },
+  {
+    "id": "vic:rail:LBK",
+    "name": "Lynbrook Railway Station",
+    "lat": -38.05734985,
+    "lon": 145.24925211,
+    "code": "vic:rail:LBK"
+  },
+  {
+    "id": "vic:rail:LIL",
+    "name": "Lilydale Railway Station",
+    "lat": -37.75721264,
+    "lon": 145.34582227,
+    "code": "vic:rail:LIL"
+  },
+  {
+    "id": "vic:rail:LWA",
+    "name": "Leawarra Railway Station",
+    "lat": -38.152034,
+    "lon": 145.13953396,
+    "code": "vic:rail:LWA"
+  },
+  {
+    "id": "vic:rail:MAC",
+    "name": "Macaulay Railway Station",
+    "lat": -37.79426673,
+    "lon": 144.93616633,
+    "code": "vic:rail:MAC"
+  },
+  {
+    "id": "vic:rail:MAL",
+    "name": "Malvern Railway Station",
+    "lat": -37.8662533,
+    "lon": 145.02929394,
+    "code": "vic:rail:MAL"
+  },
+  {
+    "id": "vic:rail:MBN",
+    "name": "Middle Brighton Railway Station",
+    "lat": -37.91513441,
+    "lon": 144.99629909,
+    "code": "vic:rail:MBN"
+  },
+  {
+    "id": "vic:rail:MCD",
+    "name": "Macleod Railway Station",
+    "lat": -37.7260123,
+    "lon": 145.06914332,
+    "code": "vic:rail:MCD"
+  },
+  {
+    "id": "vic:rail:MCE",
+    "name": "Melbourne Central Railway Station",
+    "lat": -37.80993896,
+    "lon": 144.96260489,
+    "code": "vic:rail:MCE"
+  },
+  {
+    "id": "vic:rail:MCH",
+    "name": "Mitcham Railway Station",
+    "lat": -37.81816668,
+    "lon": 145.19220824,
+    "code": "vic:rail:MCH"
+  },
+  {
+    "id": "vic:rail:MCK",
+    "name": "McKinnon Railway Station",
+    "lat": -37.91030903,
+    "lon": 145.03829897,
+    "code": "vic:rail:MCK"
+  },
+  {
+    "id": "vic:rail:MDD",
+    "name": "Mernda Railway Station",
+    "lat": -37.60254907,
+    "lon": 145.10095293,
+    "code": "vic:rail:MDD"
+  },
+  {
+    "id": "vic:rail:MEN",
+    "name": "Mentone Railway Station",
+    "lat": -37.98277704,
+    "lon": 145.06580232,
+    "code": "vic:rail:MEN"
+  },
+  {
+    "id": "vic:rail:MER",
+    "name": "Merri Railway Station",
+    "lat": -37.77784668,
+    "lon": 144.99297248,
+    "code": "vic:rail:MER"
+  },
+  {
+    "id": "vic:rail:MFY",
+    "name": "Middle Footscray Railway Station",
+    "lat": -37.8025047,
+    "lon": 144.89147208,
+    "code": "vic:rail:MFY"
+  },
+  {
+    "id": "vic:rail:MLD",
+    "name": "Moreland Railway Station",
+    "lat": -37.75448484,
+    "lon": 144.96182303,
+    "code": "vic:rail:MLD"
+  },
+  {
+    "id": "vic:rail:MLK",
+    "name": "Mooroolbark Railway Station",
+    "lat": -37.78474883,
+    "lon": 145.3124024,
+    "code": "vic:rail:MLK"
+  },
+  {
+    "id": "vic:rail:MMR",
+    "name": "Middle Gorge Railway Station",
+    "lat": -37.64403391,
+    "lon": 145.09212201,
+    "code": "vic:rail:MMR"
+  },
+  {
+    "id": "vic:rail:MMY",
+    "name": "Montmorency Railway Station",
+    "lat": -37.71529624,
+    "lon": 145.12151574,
+    "code": "vic:rail:MMY"
+  },
+  {
+    "id": "vic:rail:MOR",
+    "name": "Mordialloc Railway Station",
+    "lat": -38.00658295,
+    "lon": 145.08765936,
+    "code": "vic:rail:MOR"
+  },
+  {
+    "id": "vic:rail:MPD",
+    "name": "Moonee Ponds Railway Station",
+    "lat": -37.76570666,
+    "lon": 144.9191607,
+    "code": "vic:rail:MPD"
+  },
+  {
+    "id": "vic:rail:MPK",
+    "name": "Merinda Park Railway Station",
+    "lat": -38.07900048,
+    "lon": 145.26351137,
+    "code": "vic:rail:MPK"
+  },
+  {
+    "id": "vic:rail:MRB",
+    "name": "Murrumbeena Railway Station",
+    "lat": -37.89019832,
+    "lon": 145.06737487,
+    "code": "vic:rail:MRB"
+  },
+  {
+    "id": "vic:rail:MRN",
+    "name": "Moorabbin Railway Station",
+    "lat": -37.93435329,
+    "lon": 145.03673829,
+    "code": "vic:rail:MRN"
+  },
+  {
+    "id": "vic:rail:MRO",
+    "name": "Morradoo Railway Station",
+    "lat": -38.35403334,
+    "lon": 145.18960249,
+    "code": "vic:rail:MRO"
+  },
+  {
+    "id": "vic:rail:MWY",
+    "name": "Mount Waverley Railway Station",
+    "lat": -37.87526408,
+    "lon": 145.1280441,
+    "code": "vic:rail:MWY"
+  },
+  {
+    "id": "vic:rail:MYN",
+    "name": "Merlynston Railway Station",
+    "lat": -37.72093389,
+    "lon": 144.96131355,
+    "code": "vic:rail:MYN"
+  },
+  {
+    "id": "vic:rail:NBN",
+    "name": "North Brighton Railway Station",
+    "lat": -37.90488721,
+    "lon": 145.00260503,
+    "code": "vic:rail:NBN"
+  },
+  {
+    "id": "vic:rail:NCE",
+    "name": "Northcote Railway Station",
+    "lat": -37.76986537,
+    "lon": 144.99527721,
+    "code": "vic:rail:NCE"
+  },
+  {
+    "id": "vic:rail:NKT",
+    "name": "Newmarket Railway Station",
+    "lat": -37.78732767,
+    "lon": 144.92897847,
+    "code": "vic:rail:NKT"
+  },
+  {
+    "id": "vic:rail:NME",
+    "name": "North Melbourne Railway Station",
+    "lat": -37.80630984,
+    "lon": 144.94151017,
+    "code": "vic:rail:NME"
+  },
+  {
+    "id": "vic:rail:NPK",
+    "name": "Noble Park Railway Station",
+    "lat": -37.96661867,
+    "lon": 145.17632482,
+    "code": "vic:rail:NPK"
+  },
+  {
+    "id": "vic:rail:NPT",
+    "name": "Newport Railway Station",
+    "lat": -37.84272637,
+    "lon": 144.8835883,
+    "code": "vic:rail:NPT"
+  },
+  {
+    "id": "vic:rail:NRM",
+    "name": "North Richmond Railway Station",
+    "lat": -37.81039836,
+    "lon": 144.99250026,
+    "code": "vic:rail:NRM"
+  },
+  {
+    "id": "vic:rail:NWA",
+    "name": "Narre Warren Railway Station",
+    "lat": -38.02777361,
+    "lon": 145.303993,
+    "code": "vic:rail:NWA"
+  },
+  {
+    "id": "vic:rail:NWG",
+    "name": "Nunawading Railway Station",
+    "lat": -37.82061218,
+    "lon": 145.1748915,
+    "code": "vic:rail:NWG"
+  },
+  {
+    "id": "vic:rail:NWN",
+    "name": "North Williamstown Railway Station",
+    "lat": -37.85733348,
+    "lon": 144.88906947,
+    "code": "vic:rail:NWN"
+  },
+  {
+    "id": "vic:rail:OAK",
+    "name": "Oakleigh Railway Station",
+    "lat": -37.90037214,
+    "lon": 145.08830787,
+    "code": "vic:rail:OAK"
+  },
+  {
+    "id": "vic:rail:OFC",
+    "name": "Officer Railway Station",
+    "lat": -38.06614572,
+    "lon": 145.41098723,
+    "code": "vic:rail:OFC"
+  },
+  {
+    "id": "vic:rail:OKP",
+    "name": "Oak Park Railway Station",
+    "lat": -37.71794973,
+    "lon": 144.92151877,
+    "code": "vic:rail:OKP"
+  },
+  {
+    "id": "vic:rail:OMD",
+    "name": "Ormond Railway Station",
+    "lat": -37.90321167,
+    "lon": 145.03961342,
+    "code": "vic:rail:OMD"
+  },
+  {
+    "id": "vic:rail:PAR",
+    "name": "Parliament Railway Station",
+    "lat": -37.811337,
+    "lon": 144.973119,
+    "code": "vic:rail:PAR"
+  },
+  {
+    "id": "vic:rail:PAT",
+    "name": "Patterson Railway Station",
+    "lat": -37.92514919,
+    "lon": 145.03547003,
+    "code": "vic:rail:PAT"
+  },
+  {
+    "id": "vic:rail:PKD",
+    "name": "Parkdale Railway Station",
+    "lat": -37.99307882,
+    "lon": 145.07632682,
+    "code": "vic:rail:PKD"
+  },
+  {
+    "id": "vic:rail:PKM",
+    "name": "Pakenham Railway Station",
+    "lat": -38.08061397,
+    "lon": 145.48637907,
+    "code": "vic:rail:PKM"
+  },
+  {
+    "id": "vic:rail:PRA",
+    "name": "Prahran Railway Station",
+    "lat": -37.84951848,
+    "lon": 144.98985992,
+    "code": "vic:rail:PRA"
+  },
+  {
+    "id": "vic:rail:PRE",
+    "name": "Preston Railway Station",
+    "lat": -37.73867424,
+    "lon": 145.00052198,
+    "code": "vic:rail:PRE"
+  },
+  {
+    "id": "vic:rail:PVL",
+    "name": "Pascoe Vale Railway Station",
+    "lat": -37.73075596,
+    "lon": 144.92819562,
+    "code": "vic:rail:PVL"
+  },
+  {
+    "id": "vic:rail:RCE",
+    "name": "Flemington Racecourse Railway Station",
+    "lat": -37.78721073,
+    "lon": 144.90757709,
+    "code": "vic:rail:RCE"
+  },
+  {
+    "id": "vic:rail:REG",
+    "name": "Regent Railway Station",
+    "lat": -37.72840277,
+    "lon": 145.00277256,
+    "code": "vic:rail:REG"
+  },
+  {
+    "id": "vic:rail:RES",
+    "name": "Reservoir Railway Station",
+    "lat": -37.71688492,
+    "lon": 145.00699582,
+    "code": "vic:rail:RES"
+  },
+  {
+    "id": "vic:rail:RIP",
+    "name": "Ripponlea Railway Station",
+    "lat": -37.87596086,
+    "lon": 144.99525782,
+    "code": "vic:rail:RIP"
+  },
+  {
+    "id": "vic:rail:RIV",
+    "name": "Riversdale Railway Station",
+    "lat": -37.83150543,
+    "lon": 145.06964598,
+    "code": "vic:rail:RIV"
+  },
+  {
+    "id": "vic:rail:RMD",
+    "name": "Richmond Railway Station",
+    "lat": -37.82407446,
+    "lon": 144.99016426,
+    "code": "vic:rail:RMD"
+  },
+  {
+    "id": "vic:rail:ROS",
+    "name": "Rosanna Railway Station",
+    "lat": -37.7428786,
+    "lon": 145.06614029,
+    "code": "vic:rail:ROS"
+  },
+  {
+    "id": "vic:rail:RPK",
+    "name": "Royal Park Railway Station",
+    "lat": -37.78119293,
+    "lon": 144.95230127,
+    "code": "vic:rail:RPK"
+  },
+  {
+    "id": "vic:rail:RUS",
+    "name": "Rushall Railway Station",
+    "lat": -37.78321711,
+    "lon": 144.99240708,
+    "code": "vic:rail:RUS"
+  },
+  {
+    "id": "vic:rail:RUT",
+    "name": "Ruthven Railway Station",
+    "lat": -37.70789754,
+    "lon": 145.00951662,
+    "code": "vic:rail:RUT"
+  },
+  {
+    "id": "vic:rail:RWD",
+    "name": "Ringwood Railway Station",
+    "lat": -37.81588648,
+    "lon": 145.22896846,
+    "code": "vic:rail:RWD"
+  },
+  {
+    "id": "vic:rail:RWE",
+    "name": "Ringwood East Railway Station",
+    "lat": -37.81196804,
+    "lon": 145.25019091,
+    "code": "vic:rail:RWE"
+  },
+  {
+    "id": "vic:rail:RXP",
+    "name": "Roxburgh Park Railway Station",
+    "lat": -37.63823121,
+    "lon": 144.93540368,
+    "code": "vic:rail:RXP"
+  },
+  {
+    "id": "vic:rail:SAB",
+    "name": "St Albans Railway Station (St Albans)",
+    "lat": -37.74486131,
+    "lon": 144.80005045,
+    "code": "vic:rail:SAB"
+  },
+  {
+    "id": "vic:rail:SEA",
+    "name": "Seaford Railway Station",
+    "lat": -38.10402104,
+    "lon": 145.1282304,
+    "code": "vic:rail:SEA"
+  },
+  {
+    "id": "vic:rail:SEN",
+    "name": "Seddon Railway Station",
+    "lat": -37.80900514,
+    "lon": 144.89567157,
+    "code": "vic:rail:SEN"
+  },
+  {
+    "id": "vic:rail:SHE",
+    "name": "Seaholme Railway Station",
+    "lat": -37.86784231,
+    "lon": 144.84095773,
+    "code": "vic:rail:SHE"
+  },
+  {
+    "id": "vic:rail:SHM",
+    "name": "Sandringham Railway Station",
+    "lat": -37.95033018,
+    "lon": 145.00456136,
+    "code": "vic:rail:SHM"
+  },
+  {
+    "id": "vic:rail:SKN",
+    "name": "South Kensington Railway Station",
+    "lat": -37.79953087,
+    "lon": 144.92546901,
+    "code": "vic:rail:SKN"
+  },
+  {
+    "id": "vic:rail:SME",
+    "name": "Strathmore Railway Station",
+    "lat": -37.74359132,
+    "lon": 144.92731571,
+    "code": "vic:rail:SME"
+  },
+  {
+    "id": "vic:rail:SMG",
+    "name": "South Morang Railway Station",
+    "lat": -37.64905033,
+    "lon": 145.06701257,
+    "code": "vic:rail:SMG"
+  },
+  {
+    "id": "vic:rail:SNP",
+    "name": "Sandown Park Railway Station",
+    "lat": -37.95648655,
+    "lon": 145.16282634,
+    "code": "vic:rail:SNP"
+  },
+  {
+    "id": "vic:rail:SOU",
+    "name": "Southland Railway Station",
+    "lat": -37.95813507,
+    "lon": 145.04864786,
+    "code": "vic:rail:SOU"
+  },
+  {
+    "id": "vic:rail:SPG",
+    "name": "Springvale Railway Station",
+    "lat": -37.94950878,
+    "lon": 145.15345183,
+    "code": "vic:rail:SPG"
+  },
+  {
+    "id": "vic:rail:SPT",
+    "name": "Spotswood Railway Station",
+    "lat": -37.83063888,
+    "lon": 144.88593345,
+    "code": "vic:rail:SPT"
+  },
+  {
+    "id": "vic:rail:SSS",
+    "name": "Southern Cross Railway Station",
+    "lat": -37.8186631,
+    "lon": 144.95277706,
+    "code": "vic:rail:SSS"
+  },
+  {
+    "id": "vic:rail:STY",
+    "name": "Stony Point Railway Station",
+    "lat": -38.37423454,
+    "lon": 145.22183746,
+    "code": "vic:rail:STY"
+  },
+  {
+    "id": "vic:rail:SUN",
+    "name": "Sunshine Railway Station",
+    "lat": -37.78853633,
+    "lon": 144.8328782,
+    "code": "vic:rail:SUN"
+  },
+  {
+    "id": "vic:rail:SUY",
+    "name": "Sunbury Railway Station",
+    "lat": -37.57928396,
+    "lon": 144.72798098,
+    "code": "vic:rail:SUY"
+  },
+  {
+    "id": "vic:rail:SVE",
+    "name": "Somerville Railway Station",
+    "lat": -38.22534196,
+    "lon": 145.17624492,
+    "code": "vic:rail:SVE"
+  },
+  {
+    "id": "vic:rail:SYN",
+    "name": "Syndal Railway Station",
+    "lat": -37.87622062,
+    "lon": 145.14978071,
+    "code": "vic:rail:SYN"
+  },
+  {
+    "id": "vic:rail:SYR",
+    "name": "South Yarra Railway Station",
+    "lat": -37.83844935,
+    "lon": 144.99234221,
+    "code": "vic:rail:SYR"
+  },
+  {
+    "id": "vic:rail:TAB",
+    "name": "Tyabb Railway Station",
+    "lat": -38.259815,
+    "lon": 145.18640071,
+    "code": "vic:rail:TAB"
+  },
+  {
+    "id": "vic:rail:TBY",
+    "name": "Thornbury Railway Station",
+    "lat": -37.75505179,
+    "lon": 144.99857152,
+    "code": "vic:rail:TBY"
+  },
+  {
+    "id": "vic:rail:TCM",
+    "name": "Tecoma Railway Station",
+    "lat": -37.90811849,
+    "lon": 145.34299458,
+    "code": "vic:rail:TCM"
+  },
+  {
+    "id": "vic:rail:TGA",
+    "name": "Tooronga Railway Station",
+    "lat": -37.84936553,
+    "lon": 145.04173374,
+    "code": "vic:rail:TGA"
+  },
+  {
+    "id": "vic:rail:TOR",
+    "name": "Toorak Railway Station",
+    "lat": -37.85077381,
+    "lon": 145.01390858,
+    "code": "vic:rail:TOR"
+  },
+  {
+    "id": "vic:rail:TOT",
+    "name": "Tottenham Railway Station",
+    "lat": -37.7992509,
+    "lon": 144.86294494,
+    "code": "vic:rail:TOT"
+  },
+  {
+    "id": "vic:rail:TSN",
+    "name": "Thomastown Railway Station",
+    "lat": -37.68033809,
+    "lon": 145.01427887,
+    "code": "vic:rail:TSN"
+  },
+  {
+    "id": "vic:rail:UFD",
+    "name": "Upfield Railway Station",
+    "lat": -37.66607779,
+    "lon": 144.94673994,
+    "code": "vic:rail:UFD"
+  },
+  {
+    "id": "vic:rail:UFG",
+    "name": "Upper Ferntree Gully Railway Station",
+    "lat": -37.8926717,
+    "lon": 145.30753019,
+    "code": "vic:rail:UFG"
+  },
+  {
+    "id": "vic:rail:UNN",
+    "name": "Union Railway Station ",
+    "lat": -37.82315506,
+    "lon": 145.10034527,
+    "code": "vic:rail:UNN"
+  },
+  {
+    "id": "vic:rail:UPW",
+    "name": "Upwey Railway Station",
+    "lat": -37.90369097,
+    "lon": 145.33133336,
+    "code": "vic:rail:UPW"
+  },
+  {
+    "id": "vic:rail:VPK",
+    "name": "Victoria Park Railway Station",
+    "lat": -37.79915782,
+    "lon": 144.99445143,
+    "code": "vic:rail:VPK"
+  },
+  {
+    "id": "vic:rail:WAT",
+    "name": "Watsonia Railway Station",
+    "lat": -37.71095798,
+    "lon": 145.08379338,
+    "code": "vic:rail:WAT"
+  },
+  {
+    "id": "vic:rail:WBH",
+    "name": "Williamstown Beach Railway Station",
+    "lat": -37.86398189,
+    "lon": 144.89448368,
+    "code": "vic:rail:WBH"
+  },
+  {
+    "id": "vic:rail:WER",
+    "name": "Werribee Railway Station",
+    "lat": -37.89937805,
+    "lon": 144.66111801,
+    "code": "vic:rail:WER"
+  },
+  {
+    "id": "vic:rail:WFY",
+    "name": "West Footscray Railway Station",
+    "lat": -37.80180266,
+    "lon": 144.88398479,
+    "code": "vic:rail:WFY"
+  },
+  {
+    "id": "vic:rail:WGS",
+    "name": "Watergardens Railway Station",
+    "lat": -37.70111071,
+    "lon": 144.77418099,
+    "code": "vic:rail:WGS"
+  },
+  {
+    "id": "vic:rail:WIL",
+    "name": "Williamstown Railway Station",
+    "lat": -37.86775292,
+    "lon": 144.90532331,
+    "code": "vic:rail:WIL"
+  },
+  {
+    "id": "vic:rail:WIN",
+    "name": "Windsor Railway Station",
+    "lat": -37.85605308,
+    "lon": 144.99203517,
+    "code": "vic:rail:WIN"
+  },
+  {
+    "id": "vic:rail:WLD",
+    "name": "Williams Landing Railway Station",
+    "lat": -37.86986533,
+    "lon": 144.74744472,
+    "code": "vic:rail:WLD"
+  },
+  {
+    "id": "vic:rail:WRM",
+    "name": "West Richmond Railway Station",
+    "lat": -37.81494896,
+    "lon": 144.99142278,
+    "code": "vic:rail:WRM"
+  },
+  {
+    "id": "vic:rail:WSN",
+    "name": "Willison Railway Station",
+    "lat": -37.83571565,
+    "lon": 145.07029756,
+    "code": "vic:rail:WSN"
+  },
+  {
+    "id": "vic:rail:WTG",
+    "name": "Westgarth Railway Station",
+    "lat": -37.7806207,
+    "lon": 144.99923319,
+    "code": "vic:rail:WTG"
+  },
+  {
+    "id": "vic:rail:WTL",
+    "name": "Westall Railway Station",
+    "lat": -37.93849121,
+    "lon": 145.13883263,
+    "code": "vic:rail:WTL"
+  },
+  {
+    "id": "vic:rail:WTO",
+    "name": "Westona Railway Station",
+    "lat": -37.86516348,
+    "lon": 144.81349356,
+    "code": "vic:rail:WTO"
+  },
+  {
+    "id": "vic:rail:WTT",
+    "name": "Wattle Glen Railway Station",
+    "lat": -37.66396792,
+    "lon": 145.18161453,
+    "code": "vic:rail:WTT"
+  },
+  {
+    "id": "vic:rail:YMN",
+    "name": "Yarraman Railway Station",
+    "lat": -37.97825454,
+    "lon": 145.19160028,
+    "code": "vic:rail:YMN"
+  },
+  {
+    "id": "vic:rail:YVE",
+    "name": "Yarraville Railway Station",
+    "lat": -37.81585044,
+    "lon": 144.88993371,
+    "code": "vic:rail:YVE"
+  }
+]

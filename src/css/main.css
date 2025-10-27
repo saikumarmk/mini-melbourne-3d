@@ -1,0 +1,641 @@
+/* Melbourne 3D Train Map Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Station popup styles */
+.mapboxgl-popup-content {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.station-popup h3 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #007cbf;
+    padding-bottom: 8px;
+}
+
+.station-popup h4 {
+    margin: 12px 0 8px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.station-popup p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.station-lines {
+    margin-bottom: 12px;
+}
+
+.line-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.line-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.approaching-trains {
+    margin: 12px 0;
+}
+
+.train-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px 8px 12px;
+    margin: 6px 0;
+    background: #f5f5f5;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.train-line {
+    font-weight: 600;
+    color: #333;
+}
+
+.train-eta {
+    font-size: 12px;
+    color: #007cbf;
+    font-weight: 600;
+}
+
+.no-trains {
+    color: #999;
+    font-style: italic;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.more-trains {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+    margin: 6px 0 0 0;
+}
+
+.station-details-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: #007cbf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.station-details-btn:hover {
+    background: #005a8f;
+}
+
+/* Train popup styles */
+.train-popup {
+    min-width: 200px;
+}
+
+.train-popup h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.train-popup .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.train-popup .info-label {
+    font-weight: bold;
+    color: #666;
+}
+
+.train-popup .info-value {
+    color: #333;
+}
+
+/* Search control styles */
+.search-control {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-control input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 250px;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.search-result-item:hover {
+    background: #f5f5f5;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+/* Loading indicator */
+.loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+/* Info panel */
+.info-panel {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    z-index: 1;
+}
+
+.info-panel h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.info-panel .stat {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.info-panel .stat-value {
+    font-weight: bold;
+    color: #333;
+}
+
+/* ===========================
+   PANEL STYLES (adapted from Mini Tokyo 3D)
+   =========================== */
+
+/* Panel background overlay for modal panels */
+.modal-panel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.modal-panel-background.closed {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Base panel styles */
+.panel {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 20px);
+    max-width: 380px;
+    height: 33%;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    color: #fff;
+    transition: height 300ms, opacity 300ms;
+    opacity: 1;
+}
+
+.panel.closed {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.panel.collapsed {
+    height: 50px;
+}
+
+#panel-header {
+    position: relative;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+#panel-title {
+    width: calc(100% - 30px);
+    font-weight: bold;
+}
+
+.panel-button-group {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+}
+
+.slide-button,
+.close-button {
+    width: 24px;
+    height: 30px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide-button::after {
+    content: '▼';
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.collapsed .slide-button::after {
+    content: '▲';
+}
+
+.close-button::after {
+    content: '×';
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#panel-body {
+    height: calc(100% - 50px);
+    margin-top: 10px;
+    overflow: auto;
+    overscroll-behavior: contain;
+    line-height: 1.4;
+}
+
+#panel-content {
+    position: relative;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+/* ===========================
+   TRAIN PANEL STYLES
+   =========================== */
+
+.train-panel {
+    height: 50%;
+    max-height: 500px;
+}
+
+.train-panel.collapsed {
+    height: 68px;
+}
+
+.train-panel #panel-header {
+    height: 48px;
+    line-height: 24px;
+}
+
+.train-panel #panel-body {
+    height: calc(100% - 68px);
+}
+
+/* Train info section */
+#train-info {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#train-info .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+#train-info .info-label {
+    color: #aaa;
+}
+
+#train-info .info-value {
+    color: #fff;
+    font-weight: bold;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+}
+
+/* Timetable section */
+#timetable-section h4 {
+    margin: 0 0 10px 0;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+#timetable-content {
+    position: relative;
+    padding-left: 10px;
+}
+
+/* Railway line markers (SVG) */
+#railway-mark {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 24px;
+    height: 100%;
+    pointer-events: none;
+}
+
+#train-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: calc(100% + 20px);
+    pointer-events: none;
+}
+
+/* Station rows */
+.station-row {
+    display: table;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 5px;
+    border-radius: 4px;
+    transition: background-color 200ms;
+}
+
+.station-row:last-child {
+    margin-bottom: 10px;
+}
+
+.station-row:hover {
+    background-color: rgba(102, 102, 102, 0.5);
+}
+
+.station-row > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.station-row.next-stop {
+    background-color: rgba(52, 152, 219, 0.2);
+}
+
+.station-title-box {
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.next-indicator {
+    color: #3498db;
+    font-size: 11px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.station-time-box {
+    width: 60px;
+    text-align: right;
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Header description styles */
+.desc-header {
+    display: flex;
+    align-items: center;
+}
+
+.desc-first-row {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.desc-second-row {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.train-type-label {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+/* Scrollbar styles for Windows */
+.windows {
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+.windows::-webkit-scrollbar {
+    width: 10px;
+}
+
+.windows::-webkit-scrollbar-thumb {
+    background: #ccc;
+    background-clip: content-box;
+    border-radius: 6px;
+    border: solid 2px transparent;
+}
+
+/* ===========================
+   STATION PANEL STYLES
+   =========================== */
+
+.station-panel {
+    height: 50%;
+    max-height: 500px;
+}
+
+.station-panel.collapsed {
+    height: 68px;
+}
+
+.station-panel #panel-header {
+    height: 48px;
+    line-height: 24px;
+}
+
+.station-panel #panel-body {
+    height: calc(100% - 68px);
+}
+
+/* Station info section */
+#station-info {
+    padding: 10px;
+}
+
+#station-info .section {
+    margin-bottom: 15px;
+}
+
+#station-info h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 600;
+}
+
+/* Line badges */
+.line-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.line-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Approaching trains list */
+.approaching-trains-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.train-row {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    transition: background-color 200ms;
+}
+
+.train-row:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.train-row-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.train-row-line {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.train-line-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.train-destination {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.train-row-eta {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+    white-space: nowrap;
+}
+
+.no-data {
+    color: #aaa;
+    font-style: italic;
+    margin: 0;
+}
+

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "aus:vic:vic-02-ALM:",
+    "shortName": "Alamein",
+    "longName": "Alamein - City",
+    "type": "2",
+    "color": "#152C6B",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-ALM-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Alamein - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-BEG:",
+    "shortName": "Belgrave",
+    "longName": "Belgrave - City",
+    "type": "2",
+    "color": "#152C6B",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-BEG-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Belgrave - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-CBE:",
+    "shortName": "Cranbourne",
+    "longName": "Cranbourne - City",
+    "type": "2",
+    "color": "#279FD5",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-02-CBE-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Cranbourne - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-CCL:",
+    "shortName": "City Circle",
+    "longName": "",
+    "type": "2",
+    "color": "#0072CE",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-CGB:",
+    "shortName": "Craigieburn",
+    "longName": "Craigieburn - City",
+    "type": "2",
+    "color": "#FFBE00",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-02-CGB-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Craigieburn - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-FKN:",
+    "shortName": "Frankston",
+    "longName": "Frankston - City",
+    "type": "2",
+    "color": "#028430",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-FKN-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Frankston - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-GWY:",
+    "shortName": "Glen Waverley",
+    "longName": "Glen Waverley - City",
+    "type": "2",
+    "color": "#152C6B",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-GWY-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Glen Waverley - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-HBE:",
+    "shortName": "Hurstbridge",
+    "longName": "Hurstbridge - City",
+    "type": "2",
+    "color": "#BE1014",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-HBE-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Hurstbridge - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-LIL:",
+    "shortName": "Lilydale",
+    "longName": "Lilydale - City",
+    "type": "2",
+    "color": "#152C6B",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-LIL-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Lilydale - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-MDD:",
+    "shortName": "Mernda",
+    "longName": "Mernda - City",
+    "type": "2",
+    "color": "#BE1014",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-MDD-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Mernda - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-PKM:",
+    "shortName": "Pakenham",
+    "longName": "Pakenham - City",
+    "type": "2",
+    "color": "#279FD5",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-02-PKM-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Pakenham - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-RCE:",
+    "shortName": "Flemington Racecourse",
+    "longName": "City",
+    "type": "2",
+    "color": "#95979A",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-02-RCE-R:",
+    "shortName": "Replacement Bus",
+    "longName": "City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-SHM:",
+    "shortName": "Sandringham",
+    "longName": "Sandringham - City",
+    "type": "2",
+    "color": "#F178AF",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-02-SHM-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Sandringham - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-STY:",
+    "shortName": "Stony Point",
+    "longName": "Stony Point - Frankston",
+    "type": "2",
+    "color": "#028430",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-STY-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Stony Point - Frankston",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-SUY:",
+    "shortName": "Sunbury",
+    "longName": "Sunbury - City",
+    "type": "2",
+    "color": "#FFBE00",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-02-SUY-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Sunbury - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-UFD:",
+    "shortName": "Upfield",
+    "longName": "Upfield - City",
+    "type": "2",
+    "color": "#FFBE00",
+    "textColor": "#000000"
+  },
+  {
+    "id": "aus:vic:vic-02-UFD-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Upfield - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-WER:",
+    "shortName": "Werribee",
+    "longName": "Werribee - City",
+    "type": "2",
+    "color": "#028430",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-WER-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Werribee - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-WIL:",
+    "shortName": "Williamstown",
+    "longName": "Williamstown - City",
+    "type": "2",
+    "color": "#028430",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "aus:vic:vic-02-WIL-R:",
+    "shortName": "Replacement Bus",
+    "longName": "Williamstown - City",
+    "type": "2",
+    "color": "#FE5000",
+    "textColor": "#FFFFFF"
+  }
+]

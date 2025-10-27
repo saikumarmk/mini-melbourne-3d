@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne 3D Train Map</title>
+    
+    <!-- App CSS (includes Mapbox GL CSS) -->
+    <link href="./dist/mini-melbourne-3d.css" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 8px;
+            font-size: 18px;
+            z-index: 1000;
+        }
+        .info-box {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            max-width: 200px;
+        }
+        .info-box h3 {
+            margin: 0 0 8px 0;
+            font-size: 14px;
+            color: #333;
+        }
+        .info-box p {
+            margin: 5px 0;
+            font-size: 11px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">
+        Loading Melbourne 3D Train Map...
+    </div>
+    
+    <div id="map"></div>
+    
+    <div class="info-box">
+        <h3>Melbourne 3D Map</h3>
+        
+        <button id="toggle-markers-btn" style="
+            margin-bottom: 8px;
+            width: 100%;
+            padding: 6px;
+            background: #666;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+        ">Show 2D Markers</button>
+        
+        <div style="margin-top: 8px; border-top: 1px solid #ddd; padding-top: 8px;">
+            <h4 style="margin: 0 0 6px 0; font-size: 11px; color: #999;">Transport Layers:</h4>
+            <label style="display: flex; align-items: center; margin-bottom: 4px; cursor: pointer;">
+                <input type="checkbox" id="toggle-metro" checked style="margin-right: 6px;">
+                <span style="font-size: 11px;">🚊 Metro</span>
+            </label>
+            <label style="display: flex; align-items: center; margin-bottom: 4px; cursor: pointer;">
+                <input type="checkbox" id="toggle-vline" style="margin-right: 6px;">
+                <span style="font-size: 11px;">🚂 V/Line</span>
+            </label>
+            <label style="display: flex; align-items: center; margin-bottom: 4px; cursor: pointer;">
+                <input type="checkbox" id="toggle-tram" style="margin-right: 6px;">
+                <span style="font-size: 11px;">🚋 Trams</span>
+            </label>
+            <label style="display: flex; align-items: center; margin-bottom: 4px; cursor: pointer;">
+                <input type="checkbox" id="toggle-bus" style="margin-right: 6px;">
+                <span style="font-size: 11px;">🚌 Buses</span>
+            </label>
+        </div>
+        
+        <p style="margin-top: 8px; font-size: 10px; color: #999; border-top: 1px solid #ddd; padding-top: 6px;">
+            Click stations or vehicles for info
+        </p>
+    </div>
+
+    <!-- App Bundle (includes Three.js) -->
+    <script src="./dist/mini-melbourne-3d.js"></script>
+    
+    <script>
+        // Initialize the map (MelbourneMap is now a global from the IIFE bundle)
+        const map = new MelbourneMap({
+            container: 'map',
+            accessToken: 'pk.eyJ1IjoidGhlb3J2b2x0IiwiYSI6ImNreGQ4bm4wMzQ4YW8ydnA5NzAwazl3dW4ifQ.k66uF97yJfqj3ayH59eisQ'
+        });
+
+        // Hide loading indicator once initialized
+        setTimeout(() => {
+            document.getElementById('loading').style.display = 'none';
+            
+            // Sync checkboxes with actual initial visibility state
+            if (map.visibility) {
+                const visibility = map.visibility;
+                document.getElementById('toggle-metro').checked = visibility.stations.metro && visibility.routes.metro;
+                document.getElementById('toggle-vline').checked = visibility.stations.vline && visibility.routes.vline;
+                document.getElementById('toggle-tram').checked = visibility.stations.tram && visibility.routes.tram;
+                document.getElementById('toggle-bus').checked = visibility.stations.bus && visibility.routes.bus;
+            }
+        }, 2000);
+        
+        // Toggle 2D markers button
+        const toggleBtn = document.getElementById('toggle-markers-btn');
+        toggleBtn.addEventListener('click', () => {
+            const shown = map.toggleTrainMarkers();
+            toggleBtn.textContent = shown ? 'Hide 2D Markers' : 'Show 2D Markers';
+            toggleBtn.style.background = shown ? '#007cbf' : '#666';
+        });
+        
+        // Combined transport layer toggles - control both stations and routes
+        document.getElementById('toggle-metro').addEventListener('change', (e) => {
+            map.setStationVisibility('metro', e.target.checked);
+            map.setRouteVisibility('metro', e.target.checked);
+        });
+        document.getElementById('toggle-vline').addEventListener('change', (e) => {
+            map.setStationVisibility('vline', e.target.checked);
+            map.setRouteVisibility('vline', e.target.checked);
+        });
+        document.getElementById('toggle-tram').addEventListener('change', (e) => {
+            map.setStationVisibility('tram', e.target.checked);
+            map.setRouteVisibility('tram', e.target.checked);
+        });
+        document.getElementById('toggle-bus').addEventListener('change', (e) => {
+            map.setStationVisibility('bus', e.target.checked);
+            map.setRouteVisibility('bus', e.target.checked);
+        });
+
+        // Make map available globally for debugging
+        window.melbourneMap = map;
+        
+        // Add global command for on-demand profiling
+        window.showProfile = () => {
+            if (map.profiler) {
+                map.profiler.log(0);
+            }
+        };
+        
+        // Add commands to adjust vehicle zoom thresholds
+        window.setBusZoom = (zoom = 15) => {
+            console.log(`Setting bus zoom threshold to ${zoom}`);
+            map.busZoomThreshold = zoom;
+            map.render3DTrains();
+        };
+        window.setTramZoom = (zoom = 11) => {
+            console.log(`Setting tram zoom threshold to ${zoom}`);
+            map.tramZoomThreshold = zoom;
+            map.render3DTrains();
+        };
+        window.setVLineZoom = (zoom = 10) => {
+            console.log(`Setting V/Line zoom threshold to ${zoom}`);
+            map.vlineZoomThreshold = zoom;
+            map.render3DTrains();
+        };
+        window.showThresholds = () => {
+            console.log('Current zoom thresholds:');
+            console.log(`  Bus: ${map.busZoomThreshold}`);
+            console.log(`  Tram: ${map.tramZoomThreshold}`);
+            console.log(`  V/Line: ${map.vlineZoomThreshold}`);
+            console.log(`  Current zoom: ${map.map.getZoom().toFixed(2)}`);
+        };
+        console.log('💡 Commands: setBusZoom(15), setTramZoom(12), setVLineZoom(10), showThresholds()');
+        console.log('💡 To reduce bus lag, try: setBusZoom(15) or setBusZoom(16)');
+        
+            // Debug command to check railway offsets
+            window.checkRailways = () => {
+                console.log('Railways:', map.railways);
+                console.log('Total railways:', map.railways.length);
+                const withOffsets = map.railways.filter(r => r.offset !== undefined);
+                console.log('Railways with offsets:', withOffsets.length);
+                withOffsets.forEach(r => {
+                    console.log(`  ${r.shortName}: ${r.offset.toFixed(1)}m offset`);
+                });
+            };
+            
+            // Command to toggle railway offsets
+            window.toggleOffsets = () => {
+                console.log('⚠️ Reload page to apply offset changes. Use setOffsetDistance() to adjust.');
+            };
+            
+            // Command to set offset distance (requires reload)
+            window.setOffsetDistance = (meters) => {
+                console.log(`⚠️ To change offset distance to ${meters}m:`);
+                console.log('1. Edit src/configs.js, set railwayOffsetDistance to ' + meters);
+                console.log('2. Run: pnpm run build');
+                console.log('3. Reload page');
+                console.log(`Current distance: 5m (default)`);
+            };
+            
+            console.log('💡 Commands:');
+            console.log('  - checkRailways() - inspect offset data');
+            console.log('  - setOffsetDistance(3) - instructions to change offset distance');
+    </script>
+</body>
+</html>
+

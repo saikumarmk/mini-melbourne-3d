@@ -1,0 +1,12 @@
+node_modules/
+dist/
+public/dist/
+public/data/
+.env
+.env.local
+pnpm-lock.yaml
+node_modules.old/
+*.log
+
+# Netlify
+.netlify/

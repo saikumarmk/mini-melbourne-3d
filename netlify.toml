@@ -1,0 +1,87 @@
+[build]
+  # Build command (builds to dist/, then copies to public/dist/ and data to public/data/)
+  command = "pnpm run build:local"
+  # Directory to publish
+  publish = "public"
+  # Functions directory
+  functions = "netlify/functions"
+
+[build.environment]
+  # Node version
+  NODE_VERSION = "18"
+
+# Function settings
+[functions]
+  # Timeout in seconds (max 10s on free tier, 26s on Pro)
+  node_bundler = "esbuild"
+  # Set to us-east-1 for best performance (or change based on your region)
+  # included_files = ["netlify/functions/**"]
+
+# Headers for static assets
+[[headers]]
+  for = "/dist/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirects (not strictly needed for Netlify Functions, but good for custom paths)
+[[redirects]]
+  from = "/api/positions"
+  to = "/.netlify/functions/positions"
+  status = 200
+
+[[redirects]]
+  from = "/api/trips"
+  to = "/.netlify/functions/trips"
+  status = 200
+
+[[redirects]]
+  from = "/api/vline/positions"
+  to = "/.netlify/functions/vline-positions"
+  status = 200
+
+[[redirects]]
+  from = "/api/vline/trips"
+  to = "/.netlify/functions/vline-trips"
+  status = 200
+
+[[redirects]]
+  from = "/api/bus/positions"
+  to = "/.netlify/functions/bus-positions"
+  status = 200
+
+[[redirects]]
+  from = "/api/bus/trips"
+  to = "/.netlify/functions/bus-trips"
+  status = 200
+
+[[redirects]]
+  from = "/api/tram/positions"
+  to = "/.netlify/functions/tram-positions"
+  status = 200
+
+[[redirects]]
+  from = "/api/tram/trips"
+  to = "/.netlify/functions/tram-trips"
+  status = 200
+
+# Fallback to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
