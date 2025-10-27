@@ -277,6 +277,8 @@ async function loadVehiclePositions(apiUrl, endpoint, vehicleType, defaultColor)
  */
 export async function loadTrainPositions(apiUrl = configs.apiUrl) {
     try {
+        console.log('[DEBUG] Loading positions from API:', apiUrl);
+        
         // Fetch all vehicle types in parallel
         const [metro, vline, buses, trams] = await Promise.all([
             loadVehiclePositions(apiUrl, '/positions', 'metro', [0, 100, 200]),      // Blue
@@ -285,11 +287,19 @@ export async function loadTrainPositions(apiUrl = configs.apiUrl) {
             loadVehiclePositions(apiUrl, '/tram/positions', 'tram', [0, 200, 100])     // Green
         ]);
 
+        console.log('[DEBUG] Loaded:', {
+            metro: metro.length,
+            vline: vline.length,
+            buses: buses.length,
+            trams: trams.length
+        });
+
         // Combine all vehicles
         const allVehicles = [...metro, ...vline, ...buses, ...trams];
         
         return allVehicles;
     } catch (error) {
+        console.error('[DEBUG] Error loading positions:', error);
         return [];
     }
 }
