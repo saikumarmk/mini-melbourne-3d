@@ -1,7 +1,6 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 const API_KEY = process.env.TRANSPORTVIC_API_KEY;
-const API_BASE = 'https://data-exchange-api.vicroads.vic.gov.au/opendata/v1/gtfsr';
 
 const CACHE_TTL = 30;
 
@@ -20,8 +19,8 @@ exports.handler = async (event, context) => {
   }
 
   try {
-    const response = await fetch(`${API_BASE}/bus-vehicle-position`, {
-      headers: { 'Ocp-Apim-Subscription-Key': API_KEY },
+    const response = await fetch('https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/bus/vehicle-positions', {
+      headers: { 'KeyId': API_KEY },
     });
 
     if (!response.ok) {
