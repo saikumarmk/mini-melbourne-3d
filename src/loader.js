@@ -242,11 +242,11 @@ async function loadVehiclePositions(apiUrl, endpoint, vehicleType, defaultColor)
         const data = await response.json();
         console.log('[DEBUG] Got data for', endpoint, '- entities:', data?.entity?.length || 0);
         
-        // Parse GTFS-Realtime feed
-        if (data.feed && data.feed.entity) {
+        // Parse GTFS-Realtime feed (protobuf returns { entity: [...] } directly, no .feed wrapper)
+        if (data.entity && Array.isArray(data.entity)) {
             const vehicles = [];
             
-            data.feed.entity.forEach(entity => {
+            data.entity.forEach(entity => {
                 if (entity.vehicle && entity.vehicle.position) {
                     const vehicle = entity.vehicle;
                     const position = vehicle.position;
@@ -320,11 +320,11 @@ async function loadTripUpdatesByType(apiUrl, endpoint) {
 
         const data = await response.json();
         
-        // Parse GTFS-Realtime feed
-        if (data.feed && data.feed.entity) {
+        // Parse GTFS-Realtime feed (protobuf returns { entity: [...] } directly)
+        if (data.entity && Array.isArray(data.entity)) {
             const updates = {};
-            
-            data.feed.entity.forEach(entity => {
+
+            data.entity.forEach(entity => {
                 if (entity.tripUpdate && entity.tripUpdate.trip) {
                     const tripId = entity.tripUpdate.trip.tripId;
                     const stopTimeUpdates = entity.tripUpdate.stopTimeUpdate || [];

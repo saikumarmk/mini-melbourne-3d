@@ -1,16 +1,55 @@
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. mapbox-gl.js:36:29921
-💡 Commands: setBusZoom(15), setTramZoom(12), setVLineZoom(10), showThresholds() transit.saikumarmk.com:188:17
-💡 To reduce bus lag, try: setBusZoom(15) or setBusZoom(16) transit.saikumarmk.com:189:17
-💡 Commands: transit.saikumarmk.com:216:21
-  - checkRailways() - inspect offset data transit.saikumarmk.com:217:21
-  - setOffsetDistance(3) - instructions to change offset distance transit.saikumarmk.com:218:21
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://events.mapbox.com/events/v2?access_token=pk.eyJ1IjoidGhlb3J2b2x0IiwiYSI6ImNreGQ4bm4wMzQ4YW8ydnA5NzAwazl3dW4ifQ.k66uF97yJfqj3ayH59eisQ. (Reason: CORS request did not succeed). Status code: (null).
-
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 31
-After reporting 32, no further warnings will be reported for this WebGL context.
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://events.mapbox.com/events/v2?access_token=pk.eyJ1IjoidGhlb3J2b2x0IiwiYSI6ImNreGQ4bm4wMzQ4YW8ydnA5NzAwazl3dW4ifQ.k66uF97yJfqj3ayH59eisQ. (Reason: CORS request did not succeed). Status code: (null).
-2
 InstallTrigger is deprecated and will be removed in the future. mapbox-gl.js:36:3484
-MouseEvent.mozPressure is deprecated. Use PointerEvent.pressure instead. mapbox-gl.js:31:5784
-MouseEvent.mozInputSource is deprecated. Use PointerEvent.pointerType instead.
+[DEBUG] updateTrains - API URL: /api map.js:913:30
+[DEBUG] Loading positions from API: /api loader.js:284:42
+[DEBUG] Fetching: /api/positions loader.js:234:50
+[DEBUG] Fetching: /api/vline/positions loader.js:234:50
+[DEBUG] Fetching: /api/bus/positions loader.js:234:50
+[DEBUG] Fetching: /api/tram/positions loader.js:234:50
+[DEBUG] Got data for /vline/positions - entities: 8 loader.js:247:27
+[DEBUG] Got data for /positions - entities: 37 loader.js:247:27
+[DEBUG] Got data for /bus/positions - entities: 67 loader.js:247:27
+[DEBUG] Got data for /tram/positions - entities: 60 loader.js:247:27
+[DEBUG] Loaded: 
+Object { metro: 0, vline: 0, buses: 0, trams: 0 }
+​
+buses: 0
+​
+metro: 0
+​
+trams: 0
+​
+vline: 0
+​
+<prototype>: Object { … }
+loader.js:313:38
+[DEBUG] Received 0 positions, 0 tripUpdates map.js:934:32
+[DEBUG] After merge: 0 trains map.js:943:35
+[DEBUG] updateTrains - API URL: /api map.js:913:30
+[DEBUG] Loading positions from API: /api loader.js:284:42
+[DEBUG] Fetching: /api/positions loader.js:234:50
+[DEBUG] Fetching: /api/vline/positions loader.js:234:50
+[DEBUG] Fetching: /api/bus/positions loader.js:234:50
+[DEBUG] Fetching: /api/tram/positions loader.js:234:50
+[DEBUG] Got data for /positions - entities: 37 loader.js:247:27
+[DEBUG] Got data for /bus/positions - entities: 67 loader.js:247:27
+[DEBUG] Got data for /vline/positions - entities: 8 loader.js:247:27
+[DEBUG] Got data for /tram/positions - entities: 60 loader.js:247:27
+[DEBUG] Loaded: 
+Object { metro: 0, vline: 0, buses: 0, trams: 0 }
+loader.js:313:38
+[DEBUG] Received 0 positions, 0 tripUpdates map.js:934:32
+[DEBUG] After merge: 0 trains map.js:943:35
+[DEBUG] updateTrains - API URL: /api map.js:913:30
+[DEBUG] Loading positions from API: /api loader.js:284:42
+[DEBUG] Fetching: /api/positions loader.js:234:50
+[DEBUG] Fetching: /api/vline/positions loader.js:234:50
+[DEBUG] Fetching: /api/bus/positions loader.js:234:50
+[DEBUG] Fetching: /api/tram/positions loader.js:234:50
+[DEBUG] Got data for /positions - entities: 37 loader.js:247:27
+[DEBUG] Got data for /vline/positions - entities: 8 loader.js:247:27
+[DEBUG] Got data for /bus/positions - entities: 67 loader.js:247:27
+[DEBUG] Got data for /tram/positions - entities: 60 loader.js:247:27
+[DEBUG] Loaded: 
+Object { metro: 0, vline: 0, buses: 0, trams: 0 }
+loader.js:313:38
+[DEBUG] Received 0 positions, 0 tripUpdates
