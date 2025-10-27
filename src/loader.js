@@ -130,28 +130,33 @@ export async function loadStaticData() {
             
             // First, calculate the full extent across all shapes
             const allCoords = data.geometries.flatMap(g => g.coordinates || []);
-            const allLons = allCoords.map(c => c[0]);
-            const allLats = allCoords.map(c => c[1]);
-            const fullExtent = {
-                minLon: Math.min(...allLons),
-                maxLon: Math.max(...allLons),
-                minLat: Math.min(...allLats),
-                maxLat: Math.max(...allLats)
-            };
+            
+            // Calculate min/max without spread operator (avoids stack overflow on large arrays)
+            let minLon = Infinity, maxLon = -Infinity;
+            let minLat = Infinity, maxLat = -Infinity;
+            for (const coord of allCoords) {
+                if (coord[0] < minLon) minLon = coord[0];
+                if (coord[0] > maxLon) maxLon = coord[0];
+                if (coord[1] < minLat) minLat = coord[1];
+                if (coord[1] > maxLat) maxLat = coord[1];
+            }
+            const fullExtent = { minLon, maxLon, minLat, maxLat };
             
             // Find the shape that best covers the full extent
             const bestGeometry = data.geometries.reduce((best, current) => {
                 const coords = current.coordinates || [];
                 if (coords.length === 0) return best;
                 
-                const lons = coords.map(c => c[0]);
-                const lats = coords.map(c => c[1]);
-                const extent = {
-                    minLon: Math.min(...lons),
-                    maxLon: Math.max(...lons),
-                    minLat: Math.min(...lats),
-                    maxLat: Math.max(...lats)
-                };
+                // Calculate extent without spread operator (avoids stack overflow)
+                let minLon = Infinity, maxLon = -Infinity;
+                let minLat = Infinity, maxLat = -Infinity;
+                for (const coord of coords) {
+                    if (coord[0] < minLon) minLon = coord[0];
+                    if (coord[0] > maxLon) maxLon = coord[0];
+                    if (coord[1] < minLat) minLat = coord[1];
+                    if (coord[1] > maxLat) maxLat = coord[1];
+                }
+                const extent = { minLon, maxLon, minLat, maxLat };
                 
                 // Calculate coverage score (how much of full extent this shape covers)
                 const lonCoverage = (extent.maxLon - extent.minLon) / (fullExtent.maxLon - fullExtent.minLon);
@@ -231,22 +236,20 @@ export async function loadStaticData() {
  */
 async function loadVehiclePositions(apiUrl, endpoint, vehicleType, defaultColor) {
     try {
-        const url = `${apiUrl}${endpoint}`;
-        console.log('[DEBUG] Fetching:', url);
-        const response = await fetch(url);
+        const response = await fetch(`${apiUrl}${endpoint}`);
         if (!response.ok) {
-            console.error('[DEBUG] Failed:', url, 'Status:', response.status);
             return [];
         }
 
         const data = await response.json();
-        console.log('[DEBUG] Got data for', endpoint, '- entities:', data?.entity?.length || 0);
         
-        // Parse GTFS-Realtime feed (protobuf returns { entity: [...] } directly, no .feed wrapper)
-        if (data.entity && Array.isArray(data.entity)) {
+        // Parse GTFS-Realtime feed - handle both local (feed.entity) and Netlify (entity) structures
+        const entities = data.entity || data.feed?.entity;
+        
+        if (entities && Array.isArray(entities)) {
             const vehicles = [];
             
-            data.entity.forEach(entity => {
+            entities.forEach(entity => {
                 if (entity.vehicle && entity.vehicle.position) {
                     const vehicle = entity.vehicle;
                     const position = vehicle.position;
@@ -266,10 +269,10 @@ async function loadVehiclePositions(apiUrl, endpoint, vehicleType, defaultColor)
                     }));
                 }
             });
-
+            
             return vehicles;
         }
-
+        
         return [];
     } catch (error) {
         return [];
@@ -281,8 +284,6 @@ async function loadVehiclePositions(apiUrl, endpoint, vehicleType, defaultColor)
  */
 export async function loadTrainPositions(apiUrl = configs.apiUrl) {
     try {
-        console.log('[DEBUG] Loading positions from API:', apiUrl);
-        
         // Fetch all vehicle types in parallel
         const [metro, vline, buses, trams] = await Promise.all([
             loadVehiclePositions(apiUrl, '/positions', 'metro', [0, 100, 200]),      // Blue
@@ -291,19 +292,11 @@ export async function loadTrainPositions(apiUrl = configs.apiUrl) {
             loadVehiclePositions(apiUrl, '/tram/positions', 'tram', [0, 200, 100])     // Green
         ]);
 
-        console.log('[DEBUG] Loaded:', {
-            metro: metro.length,
-            vline: vline.length,
-            buses: buses.length,
-            trams: trams.length
-        });
-
         // Combine all vehicles
         const allVehicles = [...metro, ...vline, ...buses, ...trams];
         
         return allVehicles;
     } catch (error) {
-        console.error('[DEBUG] Error loading positions:', error);
         return [];
     }
 }
@@ -320,11 +313,13 @@ async function loadTripUpdatesByType(apiUrl, endpoint) {
 
         const data = await response.json();
         
-        // Parse GTFS-Realtime feed (protobuf returns { entity: [...] } directly)
-        if (data.entity && Array.isArray(data.entity)) {
+        // Parse GTFS-Realtime feed - check both possible structures
+        const entities = data.entity || data.feed?.entity;
+        
+        if (entities && Array.isArray(entities)) {
             const updates = {};
 
-            data.entity.forEach(entity => {
+            entities.forEach(entity => {
                 if (entity.tripUpdate && entity.tripUpdate.trip) {
                     const tripId = entity.tripUpdate.trip.tripId;
                     const stopTimeUpdates = entity.tripUpdate.stopTimeUpdate || [];

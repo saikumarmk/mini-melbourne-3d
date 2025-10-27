@@ -91,6 +91,11 @@ export default class MelbourneMap {
 
             // Load static data
             const staticData = await loadStaticData();
+            
+            if (!staticData || !staticData.stations) {
+                throw new Error('Failed to load static data - stations missing');
+            }
+            
             this.stations = staticData.stations;
             this.routes = staticData.routes; // Store routes for color lookup
             this.trips = staticData.trips;
@@ -514,11 +519,6 @@ export default class MelbourneMap {
     render3DTrains() {
         this.profiler.start('render3DTrains');
         
-        if (!this.hasLoggedFirstRender && this.trains?.length > 0) {
-            console.log('[DEBUG] First render3DTrains with', this.trains.length, 'trains');
-            this.hasLoggedFirstRender = true;
-        }
-        
         // Get current zoom level for size scaling
         const zoom = this.map.getZoom();
         
@@ -879,8 +879,6 @@ export default class MelbourneMap {
         this.profiler.start('updateTrains');
         
         try {
-            console.log('[DEBUG] updateTrains - API URL:', this.options.apiUrl);
-            
             // Increment update counters
             this.updateCounters.metro++;
             this.updateCounters.vline++;
@@ -892,13 +890,9 @@ export default class MelbourneMap {
                 loadTrainPositions(this.options.apiUrl),
                 loadTripUpdates(this.options.apiUrl)
             ]);
-            
-            console.log('[DEBUG] Received', trainPositions?.length || 0, 'positions,', tripUpdates?.length || 0, 'tripUpdates');
 
             // Merge data
             const updatedTrains = mergeTrainData(trainPositions, tripUpdates, this.stations, this.stationIdMap);
-            
-            console.log('[DEBUG] After merge:', updatedTrains?.length || 0, 'trains');
 
             // Add line and color information from routes data
             updatedTrains.forEach(train => {
